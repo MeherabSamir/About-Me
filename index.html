@@ -15,8 +15,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>আমার সম্পর্কে কিছু তথ্য!!!!!</h1>
-    <ul uk-accordion class="container">
+    <h1 uk-scrollspy="cls: uk-animation-slide-left; repeat: true;delay: 300">
+      আমার সম্পর্কে কিছু তথ্য!!!!!
+    </h1>
+    <ul
+      uk-accordion
+      class="container"
+      uk-scrollspy="cls: uk-animation-fade; repeat: true;delay: 500"
+    >
       <li class="uk-open">
         <a class="uk-accordion-title title-1" href="#">আপনার নাম কি?</a>
         <div class="uk-accordion-content">
@@ -52,7 +58,10 @@
         </div>
       </li>
     </ul>
-    <div class="footer">
+    <div
+      class="footer"
+      uk-scrollspy="cls: uk-animation-slide-right; repeat: true;delay: 400"
+    >
       <p>
         Made with ❤ by
         <a href="https://github.com/MeherabSamir" target="_blank"
@@ -65,3 +74,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+
