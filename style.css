@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hind Siliguri", sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 40px;
+  font-family: "Hind Siliguri", sans-serif;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  width: 900px;
+  margin: 40px auto;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.uk-accordion > :nth-child(n + 2) {
+  margin-top: 0;
+}
+
+.uk-accordion-title {
+  width: 100%;
+  height: auto;
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  padding: 20px;
+  margin-top: 0;
+}
+
+.uk-accordion-title:hover {
+  color: rgba(238, 238, 238, 0.89);
+}
+
+.uk-accordion-title:focus {
+  color: #eee;
+}
+
+.title-1 {
+  border-radius: 10px 10px 0 0;
+}
+
+.title-4 {
+  border-radius: 0 0 10px 10px;
+}
+
+.uk-accordion-title::before {
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-image: none;
+}
+
+.uk-accordion-title:focus::before {
+  content: "\f068";
+  background-image: none;
+}
+
+.uk-accordion-content {
+  padding: 20px;
+}
+
+.uk-accordion-content p {
+  color: #333;
+}
+
+.btn {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f12711,
+    #f5af19
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f12711,
+    #f5af19
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  color: #fff;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.footer p {
+  color: #333;
+  width: 20%;
+  margin: auto;
+}
+
+.footer p a {
+  color: #f12711;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+  .footer p {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 600px;
+  }
+  .footer p {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+  .container {
+    width: 400px;
+  }
+  .footer p {
+    width: 50%;
+  }
+}
